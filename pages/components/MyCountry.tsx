@@ -1,21 +1,3 @@
-/*
-import React from 'react';
-import { useRouter } from 'next/router';
-
-const MyCountry: React.FC = () => {
-  const router = useRouter();
-  const { city } = router.query;
-
-  return (
-    <div>
-      <h1>Welcome to My Country Page!</h1>
-      <p>Your city is: {city}</p>
-    </div>
-  );
-};
-
-export default MyCountry;
-*/
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import axios from 'axios';

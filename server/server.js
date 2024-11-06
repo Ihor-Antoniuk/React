@@ -5,8 +5,9 @@ const cors = require('cors');
 
 const app = express();
 
-//mongoose.connect('mongodb://localhost:27017/WorldCityUser', {
-mongoose.connect('mongodb://mongo:27017/WorldCityUser', {
+mongoose.connect('mongodb://127.0.0.1:27017/WorldCityUser', {
+//mongoose.connect('mongodb://localhost:27017/WorldCityUser', { //-- localhost is not supported by some versions of node.js or MongoDB
+//mongoose.connect('mongodb://mongo:27017/WorldCityUser', {     // this is version for docker container mongo
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

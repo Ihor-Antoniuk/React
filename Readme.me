@@ -16,8 +16,11 @@ How to run:
 docker-compose up --build
 
 Attn!!!
-mongoose.connect('mongodb://localhost:27017/WorldCityUser') -> mongoose.connect('mongodb://mongo:27017/WorldCityUser') in server.js and other files to prevent connection to the container itself. 
-But it will not work in local installation out of container!!!
+1.mongoose.connect('mongodb://localhost:27017/WorldCityUser') -> mongoose.connect('mongodb://mongo:27017/WorldCityUser') in server.js 
+and other files to prevent connection to the container itself. But it will not work in local installation out of container.   
+2. For MongoDB the connection string should be mongodb://127.0.0.1:27017/WorldCityUser otherwise it might result in The Network Error. 
+It depends upon the local version of the Node.JS and environment.
+!!!
 
 To run the solution in local environment out of Docker, correct connection to MongoDB to 'mongodb://localhost:27017/WorldCityUser' and run the commands:
 1. run MongoDB 

@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema({
   pass: String,
   city: String,
   country: String,
-  zip: String,
+  thoughts: String,
 });
 
 const User = mongoose.model('User', userSchema);

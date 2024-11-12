@@ -25,10 +25,14 @@ const App: React.FC = () => {
   };
 
   return (
-    <div>
+   <div className="MainContainer">
       <h1>City Users</h1>
-      <UserTable users={users} onDeleteUser={handleDeleteUser} />
-      <AddUserForm onAddUser={handleAddUser} />
+      <div className="UserTable">
+        <UserTable users={users} onDeleteUser={handleDeleteUser} />
+      </div>
+      <div className="AddUserForm">
+        <AddUserForm onAddUser={handleAddUser} />
+      </div>
     </div>
   );
 };

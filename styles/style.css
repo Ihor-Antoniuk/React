@@ -30,17 +30,42 @@ button {
   cursor: pointer;
 }
 
+    /* Style for the loading button */
+    button.loading {
+        background-color: #ccc;
+        cursor: not-allowed;
+        position: relative;
+    }
 
+        button.loading::after {
+            content: '...'; /* A simple loading indicator */
+            animation: blink 1s step-start 0s infinite;
+            position: absolute;
+            right: 10px; /* Adjust position as needed */
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
 
 body {
     font-family: 'Arial', sans-serif;
     background-image: url('background.jpg');
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
-    height: 100vh;
     margin: 0;
+    padding: 0;
 }
 
 .container {

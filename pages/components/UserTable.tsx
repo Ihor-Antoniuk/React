@@ -7,7 +7,7 @@ type User = {
   pass: string;
   city: string;
   country: string;
-  zip: string;
+  thoughts: string;
 };
 
 type UserTableProps = {
@@ -24,7 +24,7 @@ export const UserTable: React.FC<UserTableProps> = ({ users, onDeleteUser }) => 
           <th>Last Name</th>
           <th>City</th>
           <th>Country</th>
-          <th>ZIP</th>
+          <th>Thoughts</th>
           <th>Actions</th>
         </tr>
       </thead>
@@ -35,7 +35,7 @@ export const UserTable: React.FC<UserTableProps> = ({ users, onDeleteUser }) => 
             <td>{user.lastName}</td>
             <td>{user.city}</td>
             <td>{user.country}</td>
-            <td>{user.zip}</td>
+            <td>{user.thoughts}</td>
             <td>
               <button onClick={() => onDeleteUser(user._id)}>Delete</button>
             </td>

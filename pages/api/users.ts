@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import User from '../../server/models/user';
 //import User from '../../server/models/user.model';
 
-mongoose.connect('mongodb://localhost:27017/WorldCityUser', {
+mongoose.connect('mongodb://127.0.0.1:27017/WorldCityUser', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

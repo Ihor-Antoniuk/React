@@ -27,7 +27,7 @@ export const AddUserForm: React.FC<AddUserFormProps> = ({ onAddUser }) => {
       pass: '',
       city: '',
       country: '',
-      zip: ''
+      thoughts: ''
     });
   };
 
@@ -38,7 +38,7 @@ export const AddUserForm: React.FC<AddUserFormProps> = ({ onAddUser }) => {
       <input type="password" name="pass" value={formData.pass} onChange={handleChange} placeholder="Password" required />
       <input type="text" name="city" value={formData.city} onChange={handleChange} placeholder="City" required />
       <input type="text" name="country" value={formData.country} onChange={handleChange} placeholder="Country" required />
-      <input type="text" name="zip" value={formData.zip} onChange={handleChange} placeholder="ZIP" required />
+      <input type="text" name="thoughts" value={formData.thoughts} onChange={handleChange} placeholder="Thoughts" required />
       <button type="submit">Add User</button>
     </form>
   );

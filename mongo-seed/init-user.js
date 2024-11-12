@@ -5,5 +5,5 @@ db.users.insert({
   pass: 'password123',
   city: 'Toronto',
   country: 'Canada',
-  zip: '10001'
+  thoughts: 'Skills is what you get by hard working.'
 });
